@@ -69,15 +69,13 @@ func (f *Tristate) Type() string {
 func boolFromTri(t Tristate) bool {
 	if t == True {
 		return true
-	} else {
-		return false
 	}
+	return false
 }
 
 func triFromBool(b bool) Tristate {
 	if b {
 		return True
-	} else {
-		return False
 	}
+	return False
 }
